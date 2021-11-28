@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="madal.css">
+
+</head>
+<body>
+
+  <form action="" class="class">
+    <table class="list" id="storeList">
+        <thead>
+            <tr>
+               
+                <th>ID</th>
+                <th>Date de création</th>
+                <th>Etat</th>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Nom d'utilisateur</th>
+                <th>Matricule</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+        </tbody>
+    </table>
+</form>
+
+<!-- Trigger/Open The Modal -->
+<div class="form_action">
+  <button id="myBtn" class="modal-btn">Ajouter utilisateur</button>
+</div>
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Ajout d'utilisateurs</h1>
+      <form autocomplete="off" onsubmit="onFormSubmit()"  >
+         
+          <table>
+              <tr>
+                  <td>
+                   <label for="nom">Nom</label><br/>
+                   <input type="text"  name="enom" id="nom" />
+                  </td>
+                  <td>
+                   <label for="prenom">Prénom</label><br/>
+                   <input type="text" name="prenom" id="prenom"/>
+                  </td>
+                  <td>
+                   <label for="etat">Etat</label><br/>
+                   <input type="text" name="etat " id="etat"/>
+                  </td>
+              </tr>
+              <tr>
+                  <td>
+                   <label for="user">Nom d'utilisateurs</label><br/>
+                   <input type="text" name="user" id="user"/>
+                  </td>
+                  <td>
+                   <label for="dte">Date de creation</label><br/>
+                   <input type="date"  name="dte" id="dte"/>
+                  </td>
+              </tr>
+              <tr>
+               <td>
+                <label for="matricule">Matricule</label><br/>
+                <input type="number" name="matricule" id="matricule"/>
+               </td>
+           </tr>
+           
+          </table>
+          <div class="max">
+           <button class="min" onclick="submit">Enregistrer</button>
+       </div><br/>
+       </form>
+  </div>
+
+</div>
+
+  <script src="modal.js"></script>
+  
+</body>
+</html>
